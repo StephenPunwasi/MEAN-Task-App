@@ -1,7 +1,7 @@
 {
   "name": "node-todo",
   "version": "0.0.1",
-  "description": "Simple todo application",
+  "description": "A task checklist based on a MEAN stack",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.9.0",

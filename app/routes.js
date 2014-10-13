@@ -9,7 +9,7 @@ module.exports = function(app){
       //use mongoose to get all todos in the database
       Todo.find(function(err, todos){
           if (err)
-            res.send(err) //error catch
+            res.send(err)
           res.json(todos); //return all todos in JSON
       });
   });
@@ -53,6 +53,6 @@ module.exports = function(app){
 
   //Single view application that will be handles in Angular.js
   app.get('*', function(req, res){
-      res.sendFile('./public/index.html');
+      res.sendfile('./public/index.html');
   });
 };
